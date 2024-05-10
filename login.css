@@ -1,0 +1,187 @@
+@import url(./product.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*loginform*/
+#privacy-policy {
+    color: lightgreen;
+    font-size: 12px;
+}
+
+/* #login-form {
+    to hide form
+    display: none;
+} */
+
+.login-page {
+    width: 380px;
+    margin: auto;
+}
+
+.form-box {
+    width: 380px;
+    height: 75%;
+    position: absolute;
+    margin-top: 2%;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    overflow: hidden;
+}
+
+.button-box {
+    width: fit-content;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+.toggle-btn {
+    padding: 10px 23px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    width: 150px;
+    outline: none;
+    position: relative;
+    color: white;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: #00abfa;
+    border-radius: 30px;
+    transition: 1s;
+}
+
+.input-group-login {
+    top: 150px;
+    position: absolute;
+    width: 280px;
+    transition: 1s;
+}
+
+.input-group-register {
+    top: 150px;
+    position: absolute;
+    width: 280px;
+    transition: 1s;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    /* border: 1px solid red; */
+    border-bottom: 1px solid #777;
+    outline: none;
+    background: transparent;
+    transition: .5s;
+
+}
+
+
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: blue;
+    color: white;
+}
+
+.check-box {
+    margin: 20px 20px 20px 0px;
+}
+
+.loginremember {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.privacy {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    margin-top: 20px;
+    position: absolute;
+}
+
+#login {
+    left: 50px;
+}
+
+#login input {
+    color: white;
+}
+
+#register {
+    left: 450px;
+}
+
+#register input {
+    color: white;
+    font-size: 15;
+}
+
+#fname,
+#psw1 {
+    width: 48%;
+    position: absolute;
+}
+
+#lname,
+#haddress,
+#psw2 {
+    width: 50%;
+    margin-left: 140px;
+}
+
+.forgot-password {
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: fit-content;
+    display: block;
+    color: royalblue;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.input-field:focus+#signin-icon::before {
+    color: green;
+}
+
+.signinmethod {
+    display: flex;
+    margin-top: 30px;
+}
+
+.signinmethod a {
+    margin: auto;
+    width: fit-content;
+}
+
+.signinmethod a:hover i {
+    color: blue;
+}
+
+#signinlabel {
+    display: block;
+    margin: 2% auto;
+    width: fit-content;
+    color: white;
+}

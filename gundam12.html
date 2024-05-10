@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gundam</title>
+    <script src="https://kit.fontawesome.com/966c187d0b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shotcut icon" href="SiteLogo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="justbg">
+        <section class="Socialicon">
+            <div>
+                <ul class="icon">
+                    <li><a href="https://www.facebook.com"><i class="fa-brands fa-lg fa-facebook-f"></i></a></i></li>
+                    <li><a href="https://www.twitter.com"><i class="fa-brands fa-lg fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com"><i class="fa-brands fa-lg fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="login">
+                    <li><input type="text" placeholder="Search Anything" id="searchtxt"></li>
+                    <li><i class="fa-solid fa-magnifying-glass" id="search-icon"></i></li>
+                    <li><i class="fa-solid fa-lg fa-bag-shopping cart" id="cart"></i></li>
+                    <li><a href="login.php"><button id="signin">Login</button></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="mobilesearch">
+                <input type="text" placeholder="Search Anything" id="mobile-searchtxt">
+                <i class="fa-solid fa-magnifying-glass" id="mobile-search-icon"></i>
+            </div>
+        </section>
+
+        <header class="header">
+            <a href="./index.php"><img src="./SiteLogo.png" width="100px" alt=""></a>
+            <div>
+                <ul id="navbar">
+                    <li><i id="back" class="fa-solid fa-angle-left"></i></li>
+                    <li><a href="./index.php">Home</a></li>
+                    <li><a href="animefigure.html">Anime Figure</a>
+                        <ul class="P1drop">
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Product</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gundam.html" class="active">Gundam Models</a>
+                        <ul class="P1drop">
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Product</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./aboutus.php">About Us</a></li>
+                    <li><a href="./contact_us.php">Contact US</a></li>
+                    <li><a href="./login.php"><button id="mobilebutton">Log-in</button></a></li>
+                </ul>
+            </div>
+            <div id="mobile">
+                <i class="fa-solid fa-lg fa-bag-shopping cart" id="mobile_cart"></i>
+                <i id="menu" class="fa-solid fa-xl fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!-- Shopping Cart -->
+    <section class="for_background" id="for_background">
+        <div id="shopping-cart" class="shopping-cart-container">
+            <span id="for_closing_cart" class="for_closing_cart">X</span>
+            <h1>Cart</h1>
+            <h1 id="no_product"></h1>
+            <div class="cart-table">
+
+                <table id="cart-content">
+                    <thead></thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <p class="total-container" id="total-price"></p>
+            <a href="#" id="checkout-btn" class="cart-btn">Checkout</a>
+            <a href="#" id="clear-cart" class="cart-btn">Clear Cart</a>
+        </div>
+        <div class="checkout">
+            <!-- <i class="fa-light fa-circle-exclamation fa-3x"></i> -->
+            <h1 id="cart-display"></h1>
+            <div class="lds-default">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="buy-product-btn">
+                <button class="buy-product" id="buy-yes">YES</button>
+                <button class="buy-product" id="buy-no">NO</button>
+            </div>
+        </div>
+    </section>
+    <!-- For Mobile -->
+    <section>
+        <div class="b12">
+            <div id="b1">
+                <h3>New Costume</h3>
+                <p>arrived</p>
+            </div>
+            <div id="b2">
+                <h3>Want to know</h3>
+                <p>more about us..?</p>
+            </div>
+        </div>
+    </section>
+
+    <h2>Popular Product</h2>
+    <section class="nav_product">
+        <div class="product_showcase">
+            <div class="GundamT3">
+                <img src="./gundam1.1.png" alt="">
+                <p>g1</p>
+                <p>40$</p>
+                <button id="juststyle"><a href="./gundam1.php">View Detail</a></button>
+                <div id="product-box" class="product-box"> <!--cart-->
+                    <img src="./gundam1.1.png" class="card__image">
+                    <div class="card__info">
+                        <h1 class="product__title">g1</h1>
+                        <p class="product__price">40$</p>
+                        <button class="add-to-cart" id="juststyle" data-id="16">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="GundamT3">
+                <img src="./gundam2.1.png" alt="">
+                <p>g2</p>
+                <p>40$</p>
+                <button id="juststyle"><a href="./gundam2.php">View Detail</a></button>
+                <div id="product-box"> <!--cart-->
+                    <img src="./gundam2.1.png" class="card__image">
+                    <div class="card__info">
+                        <h1 class="product__title">g2</h1>
+                        <p class="product__price">40$</p>
+                        <button class="add-to-cart" id="juststyle" data-id="17">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="GundamT3">
+                <img src="./gundam3.1.jpg" alt="">
+                <p>g3</p>
+                <p>40$</p>
+                <button id="juststyle"><a href="./gundam3.php">View Detail</a></button>
+                <div id="product-box"> <!--cart-->
+                    <img src="./gundam3.1.jpg" class="card__image">
+                    <div class="card__info">
+                        <h1 class="product__title">g3</h1>
+                        <p class="product__price">40$</p>
+                        <button class="add-to-cart" id="juststyle" data-id="18">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="GundamT3">
+                <img src="g4.png" alt="">
+                <p>g4</p>
+                <p>45$</p>
+                <button id="juststyle"><a href="./index.php">View Detail</a></button>
+                <div id="product-box"> <!--cart-->
+                    <img src="g4.png" class="card__image">
+                    <div class="card__info">
+                        <h1 class="product__title">g4</h1>
+                        <p class="product__price">45$</p>
+                        <button class="add-to-cart" id="juststyle" data-id="19">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="GundamT3">
+                <img src="./g5.jpg" alt="">
+                <p>g5</p>
+                <p>45$</p>
+                <button id="juststyle"><a href="./index.php">View Detail</a></button>
+                <div id="product-box"> <!--cart-->
+                    <img src="./g5.jpg" class="card__image">
+                    <div class="card__info">
+                        <h1 class="product__title">g5</h1>
+                        <p class="product__price">45$</p>
+                        <button class="add-to-cart" id="juststyle" data-id="20">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="GundamT3">
+                <img src="" alt="">
+                <p>g6</p>
+                <p>45$</p>
+                <button id="juststyle"><a href="./index.php">View Detail</a></button>
+                <div id="product-box"> <!--cart-->
+                    <img src="" class="card__image">
+                    <div class="card__info">
+                        <h1 class="product__title">g6</h1>
+                        <p class="product__price">45$</p>
+                        <button class="add-to-cart" id="juststyle" data-id="21">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="GundamT3">
+                <img src="" alt="">
+                <p>g7</p>
+                <p>45$</p>
+                <button id="juststyle"><a href="./index.php">View Detail</a></button>
+                <div id="product-box"> <!--cart-->
+                    <img src="" class="card__image">
+                    <div class="card__info">
+                        <h1 class="product__title">g7</h1>
+                        <p class="product__price">45$</p>
+                        <button class="add-to-cart" id="juststyle" data-id="22">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="GundamT3">
+                <img src="" alt="">
+                <p>g8</p>
+                <p>45$</p>
+                <button id="juststyle"><a href="./index.php">View Detail</a></button>
+                <div id="product-box"> <!--cart-->
+                    <img src="" class="card__image">
+                    <div class="card__info">
+                        <h1 class="product__title">g8</h1>
+                        <p class="product__price">45$</p>
+                        <button class="add-to-cart" id="juststyle" data-id="23">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="GundamT3">
+                <img src="" alt="">
+                <p>g9</p>
+                <p>45$</p>
+                <button id="juststyle"><a href="./index.php">View Detail</a></button>
+                <div id="product-box"> <!--cart-->
+                    <img src="" class="card__image">
+                    <div class="card__info">
+                        <h1 class="product__title">g9</h1>
+                        <p class="product__price">45$</p>
+                        <button class="add-to-cart" id="juststyle" data-id="24">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="GundamT3">
+                <img src="" alt="">
+                <p>g10</p>
+                <p>50$</p>
+                <button id="juststyle"><a href="./index.php">View Detail</a></button>
+                <div id="product-box"> <!--cart-->
+                    <img src="" class="card__image">
+                    <div class="card__info">
+                        <h1 class="product__title">g10</h1>
+                        <p class="product__price">50$</p>
+                        <button class="add-to-cart" id="juststyle" data-id="25">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="GundamT3">
+                <img src="" alt="">
+                <p>g11</p>
+                <p>50$</p>
+                <button id="juststyle"><a href="./index.php">View Detail</a></button>
+                <div id="product-box"> <!--cart-->
+                    <img src="" class="card__image">
+                    <div class="card__info">
+                        <h1 class="product__title">g11</h1>
+                        <p class="product__price">50$</p>
+                        <button class="add-to-cart" id="juststyle" data-id="26">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="GundamT3">
+                <img src="g12.png" alt="">
+                <p>g12</p>
+                <p>45$</p>
+                <button id="juststyle"><a href="./index.php">View Detail</a></button>
+                <div id="product-box"> <!--cart-->
+                    <img src="" class="card__image">
+                    <div class="card__info">
+                        <h1 class="product__title">g12</h1>
+                        <p class="product__price">45$</p>
+                        <button class="add-to-cart" id="juststyle" data-id="27">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="GundamT3">
+                <img src="./g13.jpg" alt="">
+                <p>g13</p>
+                <p>45$</p>
+                <button id="juststyle"><a href="./index.php">View Detail</a></button>
+                <div id="product-box"> <!--cart-->
+                    <img src="" class="card__image">
+                    <div class="card__info">
+                        <h1 class="product__title">g13</h1>
+                        <p class="product__price">45$</p>
+                        <button class="add-to-cart" id="juststyle" data-id="28">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="GundamT3">
+                <img src="./g14.png" alt="">
+                <p>g14</p>
+                <p>50$</p>
+                <button id="juststyle"><a href="./index.php">View Detail</a></button>
+                <div id="product-box"> <!--cart-->
+                    <img src="" class="card__image">
+                    <div class="card__info">
+                        <h1 class="product__title">g14</h1>
+                        <p class="product__price">50$</p>
+                        <button class="add-to-cart" id="juststyle" data-id="29">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="GundamT3" id="hide">
+                <img src="./g15.png" alt="">
+                <p>g15</p>
+                <p>45$</p>
+                <button id="juststyle"><a href="./index.php">View Detail</a></button>
+                <div id="product-box"> <!--cart-->
+                    <img src="" class="card__image">
+                    <div class="card__info">
+                        <h1 class="product__title">g15</h1>
+                        <p class="product__price">45$</p>
+                        <button class="add-to-cart" id="juststyle" data-id="30">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <ul class="icon2">
+                <li><a href="https://www.facebook.com"><i class="fa-brands fa-lg fa-facebook-f"></i></a></i></li>
+                <li><a href="https://www.twitter.com"><i class="fa-brands fa-lg fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com"><i class="fa-brands fa-lg fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <a href="#" id="copyright">&copy;Website Name</a>
+    </footer>
+
+    <script src="./cart.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
